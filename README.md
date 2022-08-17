@@ -4,6 +4,11 @@ A minimal, typography-heavy newsletter theme for [Ghost](https://github.com/TryG
 
 **Demo: https://journal.ghost.io**
 
+# Added Features
+- reading progress bar
+- table of contents
+- code snipets
+
 # Instructions
 
 1. [Download this theme](https://github.com/TryGhost/Journal/archive/main.zip)
