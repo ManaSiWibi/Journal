@@ -98,7 +98,21 @@
     {{/is}}
 
     <script src="{{asset "built/main.min.js"}}"></script>
+    {{#is "post"}}
+  <script>
+    const progressBar = document.querySelector('.reading-progress');
 
+    function updateProgress() {
+      const height = document.body.clientHeight;
+      const position = window.scrollY;
+      const progress = position / height * 115;
+      progressBar.setAttribute('value', progress);
+      requestAnimationFrame(updateProgress);
+    }
+
+    requestAnimationFrame(updateProgress);
+  </script>
+{{/is}}
     {{ghost_foot}}
 </body>
 
